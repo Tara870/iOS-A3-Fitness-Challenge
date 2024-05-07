@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+// for login and register
+// reusable code
+// title with a input field
+
 struct InputView: View {
     @Binding var text : String
     let title : String
@@ -14,8 +18,23 @@ struct InputView: View {
     var isSecureField = false
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(title)
+                .foregroundColor(Color(.darkGray))
+                .fontWeight(.semibold)
+                .font(.footnote)
             
+            // password * / normal text
+            if isSecureField {
+                SecureField(placeholder, text: $text)
+                    .font(.system(size: 14))
+            }
+            else {
+                TextField(placeholder, text: $text)
+                    .font(.system(size: 14))
+            }
+            
+            Divider()
         }
         
         
