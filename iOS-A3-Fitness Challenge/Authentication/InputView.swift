@@ -10,6 +10,7 @@ import SwiftUI
 // for login and register
 // reusable code
 // title with a input field
+// child view of LoginView
 
 struct InputView: View {
     @Binding var text : String
@@ -25,6 +26,7 @@ struct InputView: View {
                 .font(.footnote)
             
             // password * / normal text
+            // default value is false - normal text
             if isSecureField {
                 SecureField(placeholder, text: $text)
                     .font(.system(size: 14))
