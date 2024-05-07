@@ -78,7 +78,6 @@ struct RegisterView: View {
                 }
                 .font(.system(size: 14))
             }
-
         }
     }
 }

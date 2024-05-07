@@ -19,6 +19,7 @@
 		57CC67502BEA650300C56869 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC674F2BEA650300C56869 /* RegisterView.swift */; };
 		57CC67522BEA81B100C56869 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC67512BEA81B100C56869 /* ProfileView.swift */; };
 		57CC67542BEA84FE00C56869 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC67532BEA84FE00C56869 /* SettingRowView.swift */; };
+		57CC67562BEA888400C56869 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC67552BEA888400C56869 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		57CC674F2BEA650300C56869 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		57CC67512BEA81B100C56869 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		57CC67532BEA84FE00C56869 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		57CC67552BEA888400C56869 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				57CC674D2BEA1CE100C56869 /* InputView.swift */,
 				57CC674F2BEA650300C56869 /* RegisterView.swift */,
 				57CC67512BEA81B100C56869 /* ProfileView.swift */,
+				57CC67552BEA888400C56869 /* User.swift */,
 				57CC67532BEA84FE00C56869 /* SettingRowView.swift */,
 			);
 			path = Authentication;
@@ -284,6 +287,7 @@
 				57CC67502BEA650300C56869 /* RegisterView.swift in Sources */,
 				57CC67542BEA84FE00C56869 /* SettingRowView.swift in Sources */,
 				57CC674E2BEA1CE100C56869 /* InputView.swift in Sources */,
+				57CC67562BEA888400C56869 /* User.swift in Sources */,
 				5796FDD52BE878220038DDF7 /* ContentView.swift in Sources */,
 				57CC67522BEA81B100C56869 /* ProfileView.swift in Sources */,
 				5796FDD32BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift in Sources */,
