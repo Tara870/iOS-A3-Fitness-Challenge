@@ -52,7 +52,9 @@ struct LoginView: View {
                 
                 // sign up button
                 NavigationLink {
-                    
+                    RegisterView()
+                        .navigationBarBackButtonHidden(true)
+                        // remove the back button in the register view
                 } label: {
                     HStack{
                         Text("Don't have an account?")
@@ -61,9 +63,6 @@ struct LoginView: View {
                     }
                     .font(.system(size: 14))
                 }
-
-                
-                
             }
         }
     }

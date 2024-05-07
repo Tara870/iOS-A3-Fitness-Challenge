@@ -16,6 +16,7 @@
 		5796FDF02BE878240038DDF7 /* iOS_A3_Fitness_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796FDEF2BE878240038DDF7 /* iOS_A3_Fitness_ChallengeUITestsLaunchTests.swift */; };
 		57CC674C2BEA1ACA00C56869 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC674B2BEA1ACA00C56869 /* LoginView.swift */; };
 		57CC674E2BEA1CE100C56869 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC674D2BEA1CE100C56869 /* InputView.swift */; };
+		57CC67502BEA650300C56869 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC674F2BEA650300C56869 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5796FDEF2BE878240038DDF7 /* iOS_A3_Fitness_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_A3_Fitness_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57CC674B2BEA1ACA00C56869 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		57CC674D2BEA1CE100C56869 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		57CC674F2BEA650300C56869 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				57CC674B2BEA1ACA00C56869 /* LoginView.swift */,
 				57CC674D2BEA1CE100C56869 /* InputView.swift */,
+				57CC674F2BEA650300C56869 /* RegisterView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CC674C2BEA1ACA00C56869 /* LoginView.swift in Sources */,
+				57CC67502BEA650300C56869 /* RegisterView.swift in Sources */,
 				57CC674E2BEA1CE100C56869 /* InputView.swift in Sources */,
 				5796FDD52BE878220038DDF7 /* ContentView.swift in Sources */,
 				5796FDD32BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift in Sources */,
