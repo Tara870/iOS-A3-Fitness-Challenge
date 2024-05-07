@@ -16,6 +16,7 @@ struct InputView: View {
     @Binding var text : String
     let title : String
     let placeholder : String
+    // pre-defined, no need to pass argument to this parameter
     var isSecureField = false
     
     var body: some View {
@@ -44,5 +45,7 @@ struct InputView: View {
 }
 
 #Preview {
-    InputView(text: .constant(""), title: "Email Address", placeholder: "name@example.com")
+    InputView(text: .constant(""), 
+              title: "Email Address",
+              placeholder: "name@example.com")
 }
