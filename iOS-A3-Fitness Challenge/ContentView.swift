@@ -12,6 +12,8 @@ struct ContentView: View {
     
     var body: some View {
         Group {
+            // if user has already logged in - profile
+            // otherwise log out
             if authViewModel.userSession != nil {
                 ProfileView()
             } else {
