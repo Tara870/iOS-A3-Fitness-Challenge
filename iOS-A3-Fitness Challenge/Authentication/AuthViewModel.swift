@@ -10,18 +10,19 @@ import Firebase
 
 class AuthViewModel: ObservableObject {
     @Published var userSession : FirebaseAuth.User?
-    @Published var currentUSer : User?
+    @Published var currentUser : User?
+    @Published var hi : String = "HI"
     
     init() {
         
     }
     
     func signIn(withEmail email : String, password : String) async throws {
-        
+        print("Sign In")
     }
     
     func createUser(withEmail email : String, password : String, fullName : String) async throws{
-        
+        print("Create User")
     }
     
     func deleteUser() {

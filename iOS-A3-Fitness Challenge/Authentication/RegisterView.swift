@@ -9,10 +9,11 @@ import SwiftUI
 
 struct RegisterView: View {
     @State private var email = ""
-    @State private var fullname = ""
+    @State private var fullName = ""
     @State private var password = ""
     @State private var confirmPassword = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var authViewModel : AuthViewModel
     
     var body: some View {
         VStack {
@@ -31,7 +32,7 @@ struct RegisterView: View {
                           placeholder: "name@example.com")
                     .autocapitalization(.none)
                 
-                InputView(text: $fullname, 
+                InputView(text: $fullName,
                           title: "Full Name",
                           placeholder: "Enter your name")
                     .autocapitalization(.none)
@@ -51,7 +52,13 @@ struct RegisterView: View {
             
             // sign in button
             Button {
-                print("Sign user up...")
+                Task {
+                    // call sign in function under viewModel
+                    try await authViewModel.createUser(
+                        withEmail: email,
+                        password: password,
+                        fullName: fullName)
+                }
             } label: {
                 HStack {
                     Text("SIGN UP")

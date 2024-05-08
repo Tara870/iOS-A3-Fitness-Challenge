@@ -157,12 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				57CC674B2BEA1ACA00C56869 /* LoginView.swift */,
-				57CC674D2BEA1CE100C56869 /* InputView.swift */,
-				57CC67622BEB3BDF00C56869 /* AuthViewModel.swift */,
 				57CC674F2BEA650300C56869 /* RegisterView.swift */,
 				57CC67512BEA81B100C56869 /* ProfileView.swift */,
-				57CC67552BEA888400C56869 /* User.swift */,
+				57CC674D2BEA1CE100C56869 /* InputView.swift */,
 				57CC67532BEA84FE00C56869 /* SettingRowView.swift */,
+				57CC67552BEA888400C56869 /* User.swift */,
+				57CC67622BEB3BDF00C56869 /* AuthViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
