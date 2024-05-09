@@ -2,16 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Our app needs to write data to healthkit</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>Our app needs to access datra from healthkit</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need you location to track your runs</string>
+HEAD
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We need you location to track your runs</string>
+	<string>We need your location to track your runs while you are using the app</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to track your runs while you are using the app</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We need you location to track your runs</string>
+	<string>We need your location to track your runs while you are using the app</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Our app needs to write data to healthkit to save your workout information</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Our app needs to access your health data to track and improve your runs</string>
+be5d158 (Adding capabilities and info.plist queries)
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>

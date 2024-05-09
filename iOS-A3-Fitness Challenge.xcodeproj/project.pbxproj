@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+HEAD
 		278704FD2BEC9A8C005722C6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		278704FF2BEC9B12005722C6 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		278705012BEC9BCA005722C6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,10 @@
 		278705092BF05B64005722C6 /* iOS-A3-Fitness-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-A3-Fitness-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2787050A2BF05B6A005722C6 /* iOS-A3-Fitness Challenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-A3-Fitness Challenge.entitlements"; sourceTree = "<group>"; };
 		2787050B2BF05E56005722C6 /* RunSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunSummaryView.swift; sourceTree = "<group>"; };
+
+		278705052BEC9D2F005722C6 /* iOS-A3-Fitness-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-A3-Fitness-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
+		278705062BEC9D38005722C6 /* iOS-A3-Fitness Challenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-A3-Fitness Challenge.entitlements"; sourceTree = "<group>"; };
+ be5d158 (Adding capabilities and info.plist queries)
 		5796FDCF2BE878220038DDF7 /* iOS-A3-Fitness Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-A3-Fitness Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5796FDD22BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_A3_Fitness_ChallengeApp.swift; sourceTree = "<group>"; };
 		5796FDD42BE878220038DDF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,8 +137,10 @@
 		5796FDD12BE878220038DDF7 /* iOS-A3-Fitness Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				2787050A2BF05B6A005722C6 /* iOS-A3-Fitness Challenge.entitlements */,
-				278705092BF05B64005722C6 /* iOS-A3-Fitness-Challenge-Info.plist */,
+HEAD
+				278705062BEC9D38005722C6 /* iOS-A3-Fitness Challenge.entitlements */,
+				278705052BEC9D2F005722C6 /* iOS-A3-Fitness-Challenge-Info.plist */,
+be5d158 (Adding capabilities and info.plist queries)
 				5796FDD22BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift */,
 				278704FD2BEC9A8C005722C6 /* LocationManager.swift */,
 				2787050B2BF05E56005722C6 /* RunSummaryView.swift */,
