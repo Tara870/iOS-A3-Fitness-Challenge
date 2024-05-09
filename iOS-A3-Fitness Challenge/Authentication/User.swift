@@ -25,7 +25,7 @@ struct User: Identifiable, Codable {
 }
 
 
-// a mock user
+// a mock user for testing firebase and profile view only
 extension User {
     static var MOCK_USER = User(id: NSUUID().uuidString, fullName: "Alice Thomas", email: "alice.thomas@test.com")
 }
