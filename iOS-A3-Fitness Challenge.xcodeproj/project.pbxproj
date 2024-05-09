@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		278704FE2BEC9A8C005722C6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278704FD2BEC9A8C005722C6 /* LocationManager.swift */; };
 		278705002BEC9B12005722C6 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278704FF2BEC9B12005722C6 /* HealthKitManager.swift */; };
+		278705022BEC9BCA005722C6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278705012BEC9BCA005722C6 /* MapView.swift */; };
 		5796FDD32BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796FDD22BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift */; };
 		5796FDD52BE878220038DDF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796FDD42BE878220038DDF7 /* ContentView.swift */; };
 		5796FDD72BE878240038DDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5796FDD62BE878240038DDF7 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		278704FD2BEC9A8C005722C6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		278704FF2BEC9B12005722C6 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		278705012BEC9BCA005722C6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		5796FDCF2BE878220038DDF7 /* iOS-A3-Fitness Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-A3-Fitness Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5796FDD22BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_A3_Fitness_ChallengeApp.swift; sourceTree = "<group>"; };
 		5796FDD42BE878220038DDF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				5796FDD22BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift */,
 				278704FD2BEC9A8C005722C6 /* LocationManager.swift */,
 				278704FF2BEC9B12005722C6 /* HealthKitManager.swift */,
+				278705012BEC9BCA005722C6 /* MapView.swift */,
 				5796FDD42BE878220038DDF7 /* ContentView.swift */,
 				5796FDD62BE878240038DDF7 /* Assets.xcassets */,
 				5796FDD82BE878240038DDF7 /* Preview Content */,
@@ -265,6 +268,7 @@
 			files = (
 				5796FDD52BE878220038DDF7 /* ContentView.swift in Sources */,
 				5796FDD32BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift in Sources */,
+				278705022BEC9BCA005722C6 /* MapView.swift in Sources */,
 				278705002BEC9B12005722C6 /* HealthKitManager.swift in Sources */,
 				278704FE2BEC9A8C005722C6 /* LocationManager.swift in Sources */,
 			);

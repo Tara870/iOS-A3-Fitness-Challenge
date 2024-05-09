@@ -2,7 +2,7 @@
 //  LocationManager.swift
 //  iOS-A3-Fitness Challenge
 //
-//  Created by David Karibian on 5/9/24.
+//  Created by David Karibian on 5/8/24.
 //
 
 import CoreLocation
