@@ -9,6 +9,10 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
+protocol ValidationFromProtocol {
+    var formIsValid: Bool { get }
+}
+
 @MainActor // publish all UI changes back to main thread
 class AuthViewModel: ObservableObject {
     @Published var userSession : FirebaseAuth.User? // firebase user object
@@ -60,8 +64,17 @@ class AuthViewModel: ObservableObject {
         
     }
     
-    func deleteUser() {
-        
+    func deleteUser() async throws {
+        do {
+//            guard let user = userSession?.uid else { return }
+            guard let uid = Auth.auth().currentUser?.uid else { return }
+            try await Firestore.firestore().collection("users").document(uid).delete()
+            try await Auth.auth().currentUser?.delete()
+            self.userSession = nil
+            self.currentUser = nil
+        } catch {
+            print("Failed to delete user with error: \(error.localizedDescription)")
+        }
     }
     
     func fetchUser() async {

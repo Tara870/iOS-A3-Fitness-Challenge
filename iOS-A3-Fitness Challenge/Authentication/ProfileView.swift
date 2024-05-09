@@ -11,16 +11,6 @@ struct ProfileView: View {
     @EnvironmentObject var authViewModel : AuthViewModel
     
     var body: some View {
-        Section("Account") {
-            Button {
-                authViewModel.signOut()
-            } label: {
-                SettingRowView(
-                    imageName: "arrow.left.circle.fill",
-                    title: "Sign Out",
-                    tintColor: .red)
-            }
-        }
         if let user = authViewModel.currentUser {
             List {
                 Section {
@@ -67,7 +57,9 @@ struct ProfileView: View {
                     }
                     
                     Button {
-                        print("Delete account...")
+                        Task {
+                            try await authViewModel.deleteUser()
+                        }
                     } label: {
                         SettingRowView(
                             imageName: "xmark.circle.fill",
@@ -76,6 +68,8 @@ struct ProfileView: View {
                     }
                 }
             }
+        } else {
+            LoginView()
         }
     }
 }
