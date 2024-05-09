@@ -26,7 +26,7 @@ class AuthViewModel: ObservableObject {
     
     func signIn(withEmail email : String, password : String) async throws {
         do {
-            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
             await fetchUser()
         } catch {
@@ -43,6 +43,7 @@ class AuthViewModel: ObservableObject {
             // encode user to raw data and push to firebase
             let encodedUser = try Firestore.Encoder().encode(user)
             try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser) // uplode the user to firestore
+            await fetchUser()
         } catch {
             print("Failed to create user with error \(error.localizedDescription)")
         }
@@ -66,9 +67,10 @@ class AuthViewModel: ObservableObject {
     func fetchUser() async {
         // if there is a user loggin in
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        
-        guard let snapshot = try? await  Firestore.firestore().collection("users").document(uid).getDocument() else { return }
-        
+        print("fetch")
+        print(uid)
+        guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }
         self.currentUser = try? snapshot.data(as: User.self)
+        print("DEBUG: CUrrent User is \(self.currentUser)")
     }
 }
