@@ -12,10 +12,11 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            // if user has already logged in - profile
-            // otherwise log out
+            // if user has already logged in - menu
+            // otherwise log in view
             if authViewModel.userSession != nil {
-                ProfileView()
+                // change it to the actual menu page
+                ProfileIconView()
             } else {
                 LoginView()
             }

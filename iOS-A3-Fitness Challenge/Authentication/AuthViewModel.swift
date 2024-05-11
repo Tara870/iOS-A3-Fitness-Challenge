@@ -66,7 +66,6 @@ class AuthViewModel: ObservableObject {
     
     func deleteUser() async throws {
         do {
-//            guard let user = userSession?.uid else { return }
             guard let uid = Auth.auth().currentUser?.uid else { return }
             try await Firestore.firestore().collection("users").document(uid).delete()
             try await Auth.auth().currentUser?.delete()

@@ -26,6 +26,7 @@
 		57CC675F2BEB3B7600C56869 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 57CC675E2BEB3B7600C56869 /* FirebaseFirestoreSwift */; };
 		57CC67612BEB3B7600C56869 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 57CC67602BEB3B7600C56869 /* FirebaseStorage */; };
 		57CC67632BEB3BDF00C56869 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC67622BEB3BDF00C56869 /* AuthViewModel.swift */; };
+		57CC67672BEF4BAB00C56869 /* ProfileIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC67662BEF4BAA00C56869 /* ProfileIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		57CC67552BEA888400C56869 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		57CC67572BEB38CE00C56869 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57CC67622BEB3BDF00C56869 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		57CC67662BEF4BAA00C56869 /* ProfileIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		57CC674A2BEA1A7500C56869 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				57CC67662BEF4BAA00C56869 /* ProfileIconView.swift */,
 				57CC674B2BEA1ACA00C56869 /* LoginView.swift */,
 				57CC674F2BEA650300C56869 /* RegisterView.swift */,
 				57CC67512BEA81B100C56869 /* ProfileView.swift */,
@@ -315,6 +318,7 @@
 				5796FDD52BE878220038DDF7 /* ContentView.swift in Sources */,
 				57CC67522BEA81B100C56869 /* ProfileView.swift in Sources */,
 				5796FDD32BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift in Sources */,
+				57CC67672BEF4BAB00C56869 /* ProfileIconView.swift in Sources */,
 				57CC67632BEB3BDF00C56869 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

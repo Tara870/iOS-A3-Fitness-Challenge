@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     @EnvironmentObject var authViewModel : AuthViewModel
+    var user : User?
     
     var body: some View {
-        if let user = authViewModel.currentUser {
+//        if let user = authViewModel.currentUser {
+        if let user = user {
             List {
                 Section {
                     HStack {
@@ -68,9 +70,7 @@ struct ProfileView: View {
                     }
                 }
             }
-        } else {
-            LoginView()
-        }
+        } 
     }
 }
 
