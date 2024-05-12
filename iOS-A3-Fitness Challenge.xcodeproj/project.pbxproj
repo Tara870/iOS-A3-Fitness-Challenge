@@ -344,7 +344,7 @@ be5d158 (Adding capabilities and info.plist queries)
 				5796FDD52BE878220038DDF7 /* ContentView.swift in Sources */,
 				57CC67522BEA81B100C56869 /* ProfileView.swift in Sources */,
 				5796FDD32BE878220038DDF7 /* iOS_A3_Fitness_ChallengeApp.swift in Sources */,
-api_work
+
 				278705022BEC9BCA005722C6 /* MapView.swift in Sources */,
 				278705002BEC9B12005722C6 /* HealthKitManager.swift in Sources */,
 				2787050C2BF05E56005722C6 /* RunSummaryView.swift in Sources */,
@@ -353,7 +353,7 @@ api_work
 
 				57CC67672BEF4BAB00C56869 /* ProfileIconView.swift in Sources */,
 				57CC67632BEB3BDF00C56869 /* AuthViewModel.swift in Sources */,
-main
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
