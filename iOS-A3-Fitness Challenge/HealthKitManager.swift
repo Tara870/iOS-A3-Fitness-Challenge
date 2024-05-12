@@ -21,7 +21,6 @@ class HealthKitManager: NSObject, ObservableObject {
     
     override init() {
         super.init()
-        // Check if HealthKit is available
         if HKHealthStore.isHealthDataAvailable() {
             requestHealthKitPermissions()
         } else {
@@ -107,7 +106,7 @@ class HealthKitManager: NSObject, ObservableObject {
             let distanceValue = quantitySample.quantity.doubleValue(for: HKUnit.meter())
             totalDistance += distanceValue
         }
-        distance = totalDistance / 1000 // Convert meters to kilometers
+        distance = totalDistance / 1000
     }
     
     func startRun(_ locationManager: LocationManager) {
@@ -121,7 +120,6 @@ class HealthKitManager: NSObject, ObservableObject {
         let workoutBuilder = HKWorkoutBuilder(healthStore: healthStore, configuration: config, device: nil)
         workoutBuilder.beginCollection(withStart: Date()) { (success, error) in
             if success {
-                // Workout started successfully
             } else {
                 print("Failed to start the workout: \(error?.localizedDescription ?? "Unknown error")")
             }
