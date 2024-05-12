@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            // if user has already logged in - menu
+            // otherwise log in view
+            if authViewModel.userSession != nil {
+                // change it to the actual menu page
+                ProfileIconView()
+            } else {
+                LoginView()
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+    
 }
