@@ -38,7 +38,7 @@ struct RegisterView: View {
                     .autocapitalization(.none)
                 
                 InputView(text: $password, 
-                          title: "Password",
+                          title: "Password (at least 6 characters)",
                           placeholder: "Enter your password",
                           isSecureField: true)
                 
