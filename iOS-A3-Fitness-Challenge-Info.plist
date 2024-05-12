@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+HEAD
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your location to track your runs while you are using the app</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to track your runs while you are using the app</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need your location to track your runs while you are using the app</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Our app needs to write data to healthkit to save your workout information</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Our app needs to access your health data to track and improve your runs</string>
+be5d158 (Adding capabilities and info.plist queries)
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModePedestrian</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+</dict>
+</plist>

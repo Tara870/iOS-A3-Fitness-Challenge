@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyANkLYaks8W_2EXvTPzNqo4lYI4d-iQRd8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>389621667145</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>au.edu.uts.iOS-A3-Fitness-Challenge</string>
+	<key>PROJECT_ID</key>
+	<string>iosautumnfitnesschallengea3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iosautumnfitnesschallengea3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:389621667145:ios:e8c875b346d1a5180e7698</string>
+</dict>
+</plist>
